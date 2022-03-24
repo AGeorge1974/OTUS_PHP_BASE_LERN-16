@@ -10,11 +10,12 @@ function showPicture (){
       $nameFileExt = strtoupper($aFile[1]);
       if (in_array($nameFileExt, $aListExtPicture)) {
         $ref = $dir.'/'.$itemFile;
-        echo '<div class=refPicture>';
-        echo '<a target="_blank" href=' . $ref . '>';
-        echo '<img src="'. $dir . '/' . $itemFile . '" height="200" width="200" vspace="5" hspace="5">';
-        echo '</a>';
-        echo '</div>';
+        $showImg = '<div class=refPicture>';
+        $showImg = $showImg . '<a target="_blank" href=' . $ref . '>';
+        $showImg = $showImg . '<img src="'. $dir . '/' . $itemFile . '" height="200" width="200" vspace="5" hspace="5">';
+        $showImg = $showImg . '</a>';
+        $showImg = $showImg . '</div>';
+        echo $showImg;
       };
     };
 };
