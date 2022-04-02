@@ -17,7 +17,7 @@
   <div class="container">
   <div class="row align-items-center">
   <?php
-    showPicture();
+    echo showPicture();
   ?>
   </div>
   </div>
